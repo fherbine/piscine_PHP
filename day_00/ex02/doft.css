@@ -1,0 +1,161 @@
+body
+{
+	background-color: #505050;
+}
+header, .main_game
+{
+	background-color: #909090;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+header
+{
+	display: flex;
+	width: 1420px;
+	height: 135px;
+	margin: auto;
+	padding: 8px;
+}
+header nav:nth-child(1)
+{
+	width: 1390px;
+	display: flex;
+	justify-content: space-between;
+}
+header nav:nth-child(2)
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#banner
+{
+	width: 450px;
+}
+
+#search
+{
+	width: 270px;
+	height: 150px;
+	position: relative;
+	top: 15px;
+	right: 5px;
+}
+#reload
+{
+	width: 22px;
+}
+#close
+{
+	width: 22px;
+}
+
+#main_container
+{
+	width: 1360px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.main_game:nth-child(1), .main_game:nth-child(3)
+{
+	width: 140px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 426px;
+}
+.main_game:nth-child(1) 
+{
+	justify-content: space-around;
+}
+.main_game:nth-child(1) img
+{
+	width: 70px;
+	height: 70px;
+}
+.main_game:nth-child(2)
+{
+	padding: 10px;
+}
+.main_game:nth-child(3)
+{
+	padding: 3px;
+}
+#book
+{
+	width: 75px;
+}
+#towel
+{
+	width: 80px;
+}
+#chatbox
+{
+	background-color: #88ff89;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+	width: 490px;
+	height: 150px;
+	padding-left: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	position: relative;
+	left: 540px;
+	bottom: 100px;
+}
+#chatbox p
+{
+	margin-bottom: 3px;
+}
+#chatbox #dial_input
+{
+	width: 380px;
+	border: 2px solid #9d969d;
+	border-right-color: #eeeeee;
+	border-bottom-color: #eeeeee;
+	height: 15px; 
+}
+#chatbox #dial_ok
+{
+	border: 1px solid #a8a4a5;
+	border-radius: 1px;
+	background-color: #f4eff3;
+	background: #0079FF;
+	height: 22px;
+	margin-left: 5px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+}
+#enter
+{
+	font-size: 22px;
+}
+#red_sh
+{
+	text-shadow: 3px 3px 8px red;
+}
+#dialog
+{
+	font-style: italic;
+}
+#wall
+{
+	width: 120px;
+	height: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	background-image: url("resources/brick.jpg");
+}
+.brk
+{
+	width: 32px;
+	height: 32px;
+}
+#eye
+{
+	border: 5px solid red;
+	border-radius: 5px;
+}
