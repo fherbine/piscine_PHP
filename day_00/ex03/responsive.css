@@ -1,0 +1,100 @@
+		h1
+		{
+			text-align: center;
+			font-size: 1.4vw;
+			font-family: Arial, sans-serif;
+		}
+		header
+		{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+		header img
+		{
+			width: 10%;
+			display: inline;
+		}
+		section
+		{
+			width: 100%;
+		}
+		#primary
+		{
+			width: 100%;
+		}
+		#secondary
+		{
+			width: 75%;
+			margin: auto;
+			margin-top: 1%;
+		}
+		td
+		{
+			border: 1px solid black;
+		}
+		td h2
+		{
+			text-align: center;
+			font-size: 1.2vw;
+		}
+		td .we
+		{
+			text-align: left;
+			font-size: 0.7vw;
+			margin: 0;
+		}
+		td .n
+		{
+			text-align: right;
+			font-size: 0.7vw;
+			margin: 0;
+		}
+		.blank_case
+		{
+			border: none;
+		}
+		.alcalin
+		{
+			background-color: #E6E0D0;
+		}
+		.rares
+		{
+			background-color: #AE79CD;
+		}
+		.alcalin_earth
+		{
+			background-color: #98866B;
+		}
+		.tr_metals
+		{
+			background-color: #FAFA73;
+		}
+		.spec
+		{
+			background-color: grey;
+		}
+		.halo
+		{
+			background-color: pink;
+		}
+		.nmetals
+		{
+			background-color: purple;
+		}
+		.metalloids
+		{
+			background-color: #2BED45;
+		}
+		.ptmetals
+		{
+			background-color: orange;
+		}
+		.lan
+		{
+			background-color: #40D2FE;
+		}
+		.act
+		{
+			background-color: #9A5AF9;
+		}
