@@ -126,7 +126,7 @@ header nav:nth-child(2)
 	background: #0079FF;
 	height: 22px;
 	margin-left: 5px;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+	background: linear-gradient(#f4eff3, #dcdcdc);
 }
 #enter
 {
