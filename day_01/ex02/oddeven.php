@@ -6,10 +6,9 @@
 	while ($nb)
 	{
 		$n = explode("\n", $nb);
-		if (is_numeric($n[0]))
+		if (is_numeric($n[0]) && ctype_digit($n[0]))
 		{
-			$n[0] = (int)$n[0];
-			if ($n[0] % 2 == 0)
+			if (!($n[0]&1))
 				echo "Le chiffre ".$n[0]." est Pair\n";
 			else
 				echo "Le chiffre ".$n[0]." est Impair\n";
