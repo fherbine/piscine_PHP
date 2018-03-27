@@ -2,7 +2,7 @@
 <?php
 	function ft_split($to_spl)
 	{
-		$to_spl = preg_replace("/ +|\t+/", " ", $to_spl);
+		$to_spl = preg_replace("/ +/", " ", $to_spl);
 		$new = explode(" ", $to_spl);
 		$new = array_filter($new);
 		return $new;

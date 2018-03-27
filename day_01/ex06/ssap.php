@@ -2,10 +2,15 @@
 <?php
 	function ft_split($to_spl)
 	{
-		$to_spl = preg_replace("/ +|\t+/", " ", $to_spl);
+		$fin = array();
+		$to_spl = preg_replace("/ +/", " ", $to_spl);
 		$new = explode(" ", $to_spl);
-		$new = array_filter($new);
-		return $new;
+		foreach ($new as $el)
+		{
+			if ($el != "")
+				$fin[] = $el;
+		}
+		return $fin;
 	}
 	$i = 0;
 	$final = array();
