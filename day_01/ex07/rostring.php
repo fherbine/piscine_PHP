@@ -3,8 +3,13 @@
 	function ft_split($tosp)
 	{
 		$new = explode(" ", $tosp);
-		$new = array_filter($new);
-		return $new;
+		$fin = array();
+		foreach ($new as $el)
+		{
+			if ($el != "")
+				$fin[] = $el;
+		}
+		return $fin;
 	}
 	if ($argc > 1)
 	{
