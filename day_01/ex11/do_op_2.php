@@ -2,9 +2,14 @@
 <?php
 	function ft_modif($str0)
 	{
+		$t_aux = array();
 		$tab = explode(" ", $str0);
-		$tab = array_filter($tab);
-		$str0 = implode($tab);
+		foreach ($tab as $t_el)
+		{
+			if ($t_el != "")
+				$t_aux[] = $t_el;
+		}
+		$str0 = implode($t_aux);
 		return $str0;
 	}
 	if ($argc != 2)

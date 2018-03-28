@@ -10,7 +10,7 @@
 			if ($el != "")
 				$fin[] = $el;
 		}
-		return $new;
+		return $fin;
 	}
 	$i = 0;
 	$i = 0;
