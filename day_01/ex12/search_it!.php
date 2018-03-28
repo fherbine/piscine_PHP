@@ -12,7 +12,7 @@ if ($argc > 2)
 		unset ($argv[$i]);
 		$argv[$elm[0]] = $elm[1];
 	}
-	if ($argv[$looking_for])
+	if ($argv[$looking_for] !== NULL)
 		echo $argv[$looking_for]."\n";
 }
 ?>
