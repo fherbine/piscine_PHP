@@ -3,8 +3,13 @@
 	function ft_split($to_spl)
 	{
 		$to_spl = preg_replace("/ +/", " ", $to_spl);
+		$fin = array();
 		$new = explode(" ", $to_spl);
-		$new = array_filter($new);
+		foreach ($new as $el)
+		{
+			if ($el != "")
+				$fin[] = $el;
+		}
 		return $new;
 	}
 	$i = 0;
