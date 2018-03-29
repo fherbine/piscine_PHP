@@ -8,10 +8,6 @@ function second_modif($matches)
 {
 	return strtoupper($matches[1]).$matches[2];
 }
-function last_modif($matches)
-{
-	return strtoupper($matches[1]).$matches[2];
-}
 if ($argc > 1)
 {
 	$page = file_get_contents($argv[1]);
