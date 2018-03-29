@@ -1,25 +1,27 @@
 #!/usr/bin/php
 <?php
+function first_modif($matches)
+{
+	return $matches[1].strtoupper($matches[2]);
+}
+function second_modif($matches)
+{
+	return strtoupper($matches[1]).$matches[2];
+}
+function last_modif($matches)
+{
+	return strtoupper($matches[1]).$matches[2];
+}
 if ($argc > 1)
 {
-	$flux = curl_init($argv[1]);
-	if ($flux)
+	$page = file_get_contents($argv[1]);
+	if ($page !== false)
 	{
-		curl_setopt($flux, CURLOPT_RETURNTRANSFER, true);
-		$page = curl_exec($flux);
-		// Ici le REGEX = > separateur
-		if ($content = preg_split("/(<html|<HTML)/", $page))
-		{
-			foreach ($content as $expr)
-			{
-				if (preg_match("/[^<]/", $expr))
-					$page = $expr;
-			}
-			$expr = "<html".$expr;
-			preg_replace("/(^<a)/", , $expr);
-			print_r($expr);
-		}
-		curl_close($flux);
+		echo $page;
+		$page = preg_replace_callback("/(<a[^<]*>)([^<]*)/", first_modif, $page);
+		$page = preg_replace_callback("/([^>]*)(<\/a>)/", second_modif, $page);
+		$page = preg_replace_callback('/(<a.*title=")([^"]*)/', first_modif, $page);
+		echo $page;
 	}
 }
 ?>
