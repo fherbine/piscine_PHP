@@ -3,7 +3,10 @@
 	{
 		$var = true;
 		if (file_exists("../private") == false)
+		{
 			mkdir("../private", 0755, true);
+			$var = true;
+		}
 		else
 		{
 			$file = file_get_contents("../private/passwd");
@@ -13,10 +16,7 @@
 				foreach ($db as $account)
 				{
 					if ($account['login'] == $_POST['login'])
-					{
-						echo "ERROR\n";
 						$var = false;
-					}
 				}
 			}
 		}
@@ -26,6 +26,8 @@
 			file_put_contents("../private/passwd", serialize($db));
 			echo "OK\n";
 		}
+		else
+			echo "ERROR\n";
 	}
 	else
 		echo "ERROR\n";
