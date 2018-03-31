@@ -9,11 +9,11 @@ function auth($login, $passwd)
 			$db = unserialize($file);
 			foreach ($db as $account)
 			{
-				if ($account['login'] === $login && $acount['passwd'] === hash("whirlpool", $passwd))
-					return true;
+				if ($account['login'] === $login && $account['passwd'] === hash("whirlpool", $passwd))
+					return TRUE;
 			}
 		}
 	}
-	return false;
+	return FALSE;
 }
 ?>
