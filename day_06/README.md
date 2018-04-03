@@ -1,3 +1,3 @@
-# Piscine PHP - Day 04
+# Piscine PHP - Day 06
 
-PHP introduction to "$_SESSION" using "$_GET" &  "$_POST"
+Day_06 - About orented object programming in PHP
