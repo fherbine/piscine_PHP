@@ -1,4 +1,4 @@
-![Logo 42](https://github.com/fherbine/piscine_PHP.git)
+![Logo 42](http://www.guidedelamobilite.com/wp-content/uploads/2017/01/ecole_42_guide_de_la_mobilite.jpg)
 # piscine_PHP
 A repository for the piscine PHP project @ 42
 
